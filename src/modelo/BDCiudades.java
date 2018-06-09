@@ -29,7 +29,6 @@ public class BDCiudades implements IBBDD,Serializable, Iterable<Ciudad>{
         for (Ciudad ciudad : ciudades){
             if (ciudad.getCp().equals(cp))
                 return ciudad;
-
         }
         throw new ExistCiudadException("No existe el CP: " + cp);
     }
