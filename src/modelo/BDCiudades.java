@@ -38,7 +38,6 @@ public class BDCiudades implements IBBDD,Serializable, Iterable<Ciudad>{
         for (Ciudad ciudad : ciudades){
             if (ciudad.getCp().equals(cp))
                 return true;
-
         }
         return false;
     }
