@@ -34,7 +34,7 @@ public class Menu extends Controlador {
 
     private void crearMenu() {
         for (String opcionStr : listaDeOpcionesStr) {
-            Opcion opcion = OpcionFactory.getOpcion(opcionStr, this);
+            Opcion opcion = new OpcionFactory<Opcion,String>(this).getProduct(opcionStr);
             opciones.add(opcion);
         }
     }

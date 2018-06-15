@@ -50,7 +50,7 @@ public class BDCiudades implements IBBDD,Serializable, Iterable<Ciudad>{
 
     @Override
     public boolean estaVacia() {
-        return size() == 0;
+        return ciudades.isEmpty();
     }
 
     @Override
